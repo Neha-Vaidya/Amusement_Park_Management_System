@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formcss.css">
+    <title>Amusement Park</title>
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="images/Ferris Wheel - 77563.mp4" type="video/mp4">
+      </video>
+      
+    <div class="title">
+       <span> <div class="btn">
+            <a href="index.html">Home</a> 
+         </div>
+        </span>
+        <h1 id="title"><span>Book Now</span></h1>
+        
+    </div>
+   
+    <div class="form">
+        <hr>
+       <h1> <form action="DBMS.php" method="post">
+         <label for="fname">Name:</label>
+         <input type="text" id="fname" name="fname"><br><br>
+         <label for="contact">Contact no:</label>
+         <input type="text" id="contact" name="contact"><br><br>
+         <label for="email">Email Id:</label>
+         <input type="text" id="email" name="email"><br><br>
+         <label for="park">Park:</label>
+         <select  name="park" id="park">
+          <option> </option>
+          <option value="Adventure Park">Adventure Park</option>
+          <option value="Theme Park">Theme Park</option>
+          <option value="Snow Park">Snow Park</option>
+          <option value="Trampolin Park">Trampolin Park</option>></select><br><br>
+         <label for="date">Date of visiting</label>
+         <input type="date" id="date" name="date"><br><br>
+         <label for="offer">Offer</label>
+         <select name="offer" id="offer">
+          <option> </option>
+          <option value="Student offer">Student offer</option>
+          <option value="Party Pack">Party Pack</option>></select><br><br>
+         <label for="text">Total</label>
+         <input type="text" id="total" name="total"><br><br>
+         <button class="btn1">Submit</button>
+         </form>
+       </h1>
+    </div>
+   
+</body>
+</html>

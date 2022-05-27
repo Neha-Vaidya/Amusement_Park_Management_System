@@ -1,0 +1,89 @@
+body{
+    background-image: url('images/ap3.webp');
+    background-size: cover;
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+.form{
+   
+    
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    color: rgb(0, 3, 3);
+    font-family: 'Times New Roman', Times, serif;
+    margin: 70px 100px;
+}
+.title,h1{
+    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size:xx-large;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    position:relative;
+    margin-top: 0;
+}
+
+#title{
+  margin: 0 auto;
+}
+
+.btn {
+    background: #e4e8eb;
+    background-image: -webkit-linear-gradient(top, #f7d460, #f7d460);
+    background-image: -moz-linear-gradient(top, #f7d460, #f7d460);
+    background-image: -ms-linear-gradient(top, #f7d460, #f7d460);
+    background-image: -o-linear-gradient(top, #f7d460, #f7d460);
+    background-image: linear-gradient(to bottom, #f7d460, #f7d460);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    text-align: center;
+    /*margin-right: 1500px;*/
+    float: left;
+  }
+  
+  .btn:hover {
+    background: #ffc400;
+    background-image: -webkit-linear-gradient(top,  #ffc400,  #ffc400);
+    background-image: -moz-linear-gradient(top, #ffc400,  #ffc400);
+    background-image: -ms-linear-gradient(top, #ffc400,  #ffc400);
+    background-image: -o-linear-gradient(top, #ffc400,  #ffc400);
+    background-image: linear-gradient(to bottom, #ffc400,  #ffc400);
+  }
+
+  .btn1 {
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    background: #f7d460;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .btn1:hover {
+    background: #ffc400;
+    text-decoration: none;
+  }
+.adminbtn{
+  width: 4px;
+  height: auto;
+  display: inline-block;
+}
+.databaseview{
+  text-decoration-color: #e4e8eb;
+  color: #e4e8eb;
+
+}

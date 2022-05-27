@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="adventureparks.css">
+    <link rel="stylesheet" href="formcss.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="title">
+        <span> <div class="btn">
+             <a href="index.html">Home</a> 
+          </div>
+         </span>
+         <h1 id="title"><span>Adventure Parks</span></h1>
+         
+     </div>
+     <div class="content1">
+<h2>
+    1) Imagicaa Amusement Theme Park
+</h2>
+         <h3>
+            Unique indoor & outdoor rides & shows make this<br> India's favourite themed entertainment destination.
+         </h3>
+         <P>
+            The perfect destination for friends and family.<br> With thrilling indoor and outdoor roller coasters, several of India's first thematic shows & attractions, a Grand Imagicaa Parade, and more, Imagicaa Theme Park has it all.
+
+           <br> <button class="btn1">BookNow</button>
+           
+         </P>
+     </div>
+     <?php
+if(isset($_POST['sub'])){
+  $server = '127.0.0.1';
+  $username =  "root";
+  $password = "";
+
+  $database='amusementpark';
+ 
+  $con= new mysqli ($server,$username,$password,$database);
+ 
+  if(!$con){
+      die("connection to this database failed due to ".mysqli_connect_error);
+ 
+  }
+else{
+$Name=$_POST['fname'];
+$Contact=$_POST['contact'];
+$Email=$_POST['email'];
+$password=$_POST['password'];
+ $w ="INSERT INTO `BookNow`( `Name`, `ContactNo`, `Email-ID`, `Password`) VALUES ( '".$Name."', '".$Contact."', '".$Email."', '".$password."')";
+ 
+ if(!$w){
+   echo"ERROR: $w <br> $con->error";
+ }
+ $result=$con->query($w);
+}
+ 
+}
+?>
+</body>
+</html>
