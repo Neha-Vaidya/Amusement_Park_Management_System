@@ -1,6 +1,7 @@
 AMUSEMENT PARK MANAGEMENT SYSTEM
 
-Problem statement
+Problem statement <br>
+<br>
 An Amusement Park has a Name. People visit the site and sign up with
 their name, email Id, and Phone number. There are various types of
 rides in the amusement park-like Adventure rides, water rides,
